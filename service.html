@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="css/service.css">
+    <script defer  src="./javascript/service.js"></script>
+    <script defer src="./javascript/page.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- googlr fonts -->
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="#">
+                <img src="Images/logo_1.png" alt="">
+            </a>
+            <h1 class="main-heading">
+                <span class="v-letter">V</span><span class="guard-text">Guard</span>
+            </h1>
+            <nav>
+                <i class="fas fa-bars toggle-menu" id="toggle"></i>
+                    <ul class="mobile-menu" id="smallmenu">
+                        <li><a href="page.html">Home</a></li>
+                        <li><a href="#start1">Services</a></li>
+                        <li><a href="page.html#start2">Abouts Us</a></li>
+                        <li class="product">
+                            <div class="product-special" id="product">Our Product</div>
+                            <div class="menu" id="product-menu">
+                                <a href="./ourProduct/ourProduct/product.html#start1">network equipment</a>
+                                <a href="./ourProduct/ourProduct/product.html#start2">security equipment</a>
+                                <a href="./ourProduct/ourProduct/product.html#start3">hardware device</a>
+                                <div>
+                        </li>
+                        <ul>
+                            <li id="for-you"><a href="#">For you</a></li>
+                        </ul>
+                    
+                        <script>
+                            document.getElementById('for-you').addEventListener('click', function() {
+                                const screenWidth = window.screen.availWidth;
+                                const screenHeight = window.screen.availHeight;
+                                const features = `width=${screenWidth},height=${screenHeight},scrollbars=yes,resizable=yes`;
+                                window.open('cloud/cloud.html', '_blank', features);
+                            });
+                        </script>                        <li><a href="#start3">Contact</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+<!-- start landing -->
+    <div class="landing">
+            <div class="overlay">
+                <div class="text">
+                    <div class="content" id="service-content">
+                        <h1>
+                            our services
+                        </h1>
+                    </div>    
+            </div>    
+            </div>
+    </div>
+    <!-- end landing  -->
+    <!-- start 4 items -->
+    <section id="start1" class="services">
+        <div class="container">
+            <div class="main-heading">
+                <h2> Services</h2>
+                <p>Discover how our comprehensive range of services can help you achieve your goals efficiently and effectively.</p>
+            </div>
+            <div class="service-items">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Solutions</h3>
+                    <p>Enhance your connectivity with our cutting-edge network solutions. From design and implementation to maintenance, we ensure seamless operations for your business.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Scalable infrastructure</li>
+                        <li><i class="fas fa-check"></i> High-speed connectivity</li>
+                        <li><i class="fas fa-check"></i> Robust security measures</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Solutions</h3>
+                    <p>Protect your valuable assets with our comprehensive security solutions. We offer a range of services including threat detection, vulnerability assessments, and security consulting.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Advanced threat detection</li>
+                        <li><i class="fas fa-check"></i> Proactive security measures</li>
+                        <li><i class="fas fa-check"></i> Compliance assistance</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Hardware Solutions</h3>
+                    <p>Optimize your infrastructure with our high-performance hardware solutions. From servers and storage devices to peripherals, we provide reliable hardware tailored to your needs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Customized hardware configurations</li>
+                        <li><i class="fas fa-check"></i> Reliable performance</li>
+                        <li><i class="fas fa-check"></i> Scalable solutions</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Unified Threat Management (UTM)</h3>
+                    <p>Ensure comprehensive protection for your network infrastructure with our UTM solutions. We integrate multiple security features into a single platform for simplified management and enhanced security.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> All-in-one security solution</li>
+                        <li><i class="fas fa-check"></i> Real-time threat intelligence</li>
+                        <li><i class="fas fa-check"></i> Centralized management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- end 4 items -->
+    
+    <section id="services" class="services">
+        <div class="container">
+            <div class="main-heading">
+                <h2>cloud Services</h2>
+            </div>
+            <div class="service-items">
+                <div class="service-item">
+                    <h3><i class="fas fa-cloud"></i> Cloud Infrastructure</h3>
+                    <p> Your Cloud Infrastructure: Run enterprise apps with a consistent infrastructure and operating model across any environment you choose with VGuard Cloud, the Cloud and Edge Infrastructure solution of the VGuard Cross-Cloud services portfolio.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Unlimited Cloud Operators and Environment Options:<br> Choose the cloud that best fits your application needs. VGuard includes support for all infrastructures including on-premises, edge, public, private, and local clouds in all operational models.</li>
+                        <li><i class="fas fa-check"></i> Unified Management and Operations:<br> Optimize your administrators and developers time by using the same skills, tools, and processes across all cloud environments. Automate installation, configuration, apps and infrastructure, connectivity, and security components.</li>
+                        <li><i class="fas fa-check"></i> Compatible Infrastructure, Security and Connectivity: <br>Run any application in any cloud without code or configuration changes enabled through seamless extension of Layer 2 and 3 networks. Intrinsically built-in security and high availability ensure minimum disruption. It also provides robust and consistent access control, data-in-motion, and data-at-rest privacy — along with threat protection and response.</li>
+                        <li><i class="fas fa-check"></i> Comprehensive App Modernization Platform: <br>Gain access to modular app and developer services available and accessible in all clouds. They can be combined in different ways and are available for both VM and container-based applications to meet a wide variety of business objectives.</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3><i class="fas fa-network-wired"></i> Networking</h3>
+                    <p>VGuard Networking: Achieve the cloud operating model with the proven, full-stack VMware Networking solution. Deploy workloads automatically without opening tickets and get end-to-end visibility across private, hybrid, and multi-clouds.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Build a Multi-Cloud Network: Get the agility of the public cloud experience in your private, hybrid, and public clouds. Automate your network and simplify Day 0, Day 1, and Day 2 operations. Leverage a unified networking and security platform that delivers consistent policy, advanced threat prevention, advanced load balancing, and end-to-end visibility.</li>
+                        <li><i class="fas fa-check"></i> Simplify Network Automation and Operations: Embrace a cloud operating model to achieve greater agility, efficiency, and competitive advantage. Automated full-stack networking for 1-click provisioning and ensure network agility and simplified operations. Accelerate your app delivery and achieve consistent networking and security across clouds while reducing manual, error-prone tasks, with the programmatic control of VGuard NSX.</li>
+                        <li><i class="fas fa-check"></i> Enable App Mobility, Migration, and Disaster Recovery: Ensure business continuity with VMware NSX's workload mobility and disaster recovery capabilities. Simplify and accelerate your application workload migrations within and across data centers and clouds. Easily meet the demanding high availability needs for your infrastructure.</li>
+                        <li><i class="fas fa-check"></i> Connect and Secure Kubernetes Workloads: Simplify container networking and policy management with a unified stack for multiple Kubernetes providers. Unify your networking and security for containers and VMs with VMware NSX and VMware Container Networking with Project Antrea. Bring enterprise features to container workloads by integrating VMware Container Networking Interface with Kubernetes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sequrity -->
+    <section id="seq" class="services">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Security Solutions</h2>
+                <p>We aim to secure the infrastructure using best practices and security solutions like FortiGate as a firewall, Splunk as a SIEM solution, and Snort as IDS. Then we will test the whole infrastructure to ensure it is secure.</p>
+            </div>
+            <div class="service-items">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>FortiGate Firewall</h3>
+                    <p>FortiGate NGFW is the world’s most deployed network firewall, delivering unparalleled AI powered security performance and threat intelligence, along with full visibility and security and networking convergence.</p>
+                    <div class="linkk">
+                    <p ><a href="https://www.fortinet.com/products/next-generation-firewall" target="_blank">Learn more about FortiGate</a></p>
+                    </div>
+                    <h4>What is Firewall?</h4>
+                    <p>A firewall is a network security device or software that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted internal network and untrusted external networks, such as the internet, and helps prevent unauthorized access to or from private networks. Firewalls can be implemented in various forms, including hardware appliances, software applications, or a combination of both. They are essential components of network security, helping to protect against cyber threats like hackers, malware, and unauthorized access.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SIEM Solution - Splunk</h3>
+                    <p>Splunk is a big data platform that simplifies the task of collecting and managing massive volumes of machine-generated data and searching for information within it. It provides real-time log ingestion, alerting against abnormal activities, 24/7 monitoring, and more.</p>
+                    <p>It correlates, captures, and indexes real-time data, creating alerts, dashboards, and visualizations for operational intelligence.</p>
+                    <h4>What is SIEM solution?</h4>
+                    <p>SIEM stands for Security Information and Event Management system. It is a tool that collects data from various endpoints/network devices across the network, stores them at a centralized place, and performs correlation on them.</p>
+                    <p>Importance of SIEM: It not only takes logs from various sources in real-time but also provides the ability to correlate between events, search through the logs, investigate incidents, and respond promptly.</p>
+                    <h4>Example for SIEM solution: Splunk</h4>
+                    <p>Splunk is an advanced and scalable form of software that indexes and searches for log files within a system and analyzes data for operational intelligence. The software is responsible for splunking data, which means it correlates, captures, and indexes real-time data, from which it creates alerts, dashboards, graphs, reports, and visualizations. This helps organizations recognize common data patterns, diagnose potential problems, apply intelligence to business operations, and produce metrics.
+                     
+                    </p>
+                    <ul class="class">
+                        <li><i class="fas fa-check"></i>Real-time log Ingestion</li>
+                        <li><i class="fas fa-check"></i>Alerting against abnormal activities</li>
+                        <li><i class="fas fa-check"></i>24/7 Monitoring and visibility</li>
+                        <li><i class="fas fa-check"></i>Protection against the latest threats through early detection</li>
+                        <li><i class="fas fa-check"></i>Data Insights and visualization</li>
+                        <li><i class="fas fa-check"></i>Ability to investigate past incidents</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Snort IDS/IPS</h3>
+                    <p>Snort is an open-source, rule-based Network Intrusion Detection and Prevention System (NIDS/NIPS). It performs live traffic analysis, attack and probe detection, packet logging, and real-time alerting.</p>
+                    <p>It can be configured as a packet sniffer, packet logger, or a full-blown network intrusion prevention system.</p>
+                    <h4>IPS vs IDS</h4>
+                    <p>Intrusion Detection System (IDS) is a passive monitoring solution for detecting possible malicious activities/patterns, abnormal incidents, and policy violations. It generates alerts for each suspicious event but does not take automatic action to block or prevent the detected threats.</p>
+                    <p>Intrusion Prevention System (IPS), on the other hand, actively protects by preventing possible malicious activities/patterns, abnormal incidents, and policy violations. It monitors network traffic or system logs and takes immediate action to block the malicious activity when detected.</p>
+                    <p>IPS provides a proactive layer of defense by actively stopping potential threats before they can cause harm, while IDS identifies threats but requires user intervention to stop them.</p>
+                    <h4>What is Snort?</h4>
+                    <p>Snort is an open-source, rule-based Network Intrusion Detection and Prevention System (NIDS/NIPS). It can be used as a packet sniffer, packet logger, or a full-blown network intrusion prevention system.</p>
+                    <p>Capabilities of Snort include live traffic analysis, attack and probe detection, packet logging, protocol analysis, real-time alerting, and cross-platform support (Linux & Windows).</p>
+                    <p>More information about Snort can be found on their <a href="https://www.snort.org/" target="_blank">official website</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Start Contact -->
+     <div class="start" id="start3"></div>
+     <div class="section-contact">
+         <div class="contact">
+             <div class="container">
+                 <h2 class="special-heading">Contact</h2>
+                 <p>We are born to create</p>
+                 <div class="info">
+                     <p class="label">Feel free to drop us a line at:</p>
+                     <a href="mailto:VGuard_solutions@mail.com?subject=Contact"
+                         class="link">VGuard_solutions@mail.com</a>
+                     <div class="social">
+                         Find Us On Social Networks
+                         <i class="fab fa-youtube"></i>
+                         <i class="fab fa-facebook-f"></i>
+                         <i class="fab fa-twitter"></i>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- End Contact -->
+     <!-- Start Footer -->
+     <div class="footer">&copy; 2024 <span>VGuard</span> All Right Reserved</div>
+     <!-- End Footer -->
+
+    
+    
