@@ -1,0 +1,644 @@
+/* _________________________________start golbal value_______________________________________ */
+:root {
+    --main-color: rgb(191 156 110 );
+    --transparent-color: rgb(15 116 143 /70%);
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.main-heading {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main-heading h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    font-weight: normal;
+    position: relative;
+}
+
+.main-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #777;
+
+    bottom: -30px;
+    width: 120px;
+
+}
+
+.main-heading h2::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #777;
+    left: 50%;
+    bottom: -38px;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.main-heading p {
+    width: 550px;
+    max-width: 100%;
+    color: #777;
+    margin: 0 auto 100px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* ______________________start header_______________________________ */
+
+
+/* header h1 {
+    color: white;
+    position: relative;
+    margin-top: 52px;
+    font-size: 45px;
+    margin-left: -28px;
+} */
+
+
+
+header h1 {
+    position: relative;
+    margin-top: 52px;
+    font-size: 45px;
+    margin-left: -28px;
+}
+
+header h1 span.v-letter {
+    font-size: 65px;
+    color: rgb(191 156 110 ); 
+}
+
+header h1 span.guard-text {
+    color: #ffffff; 
+}
+
+header .menu a {
+    display: block;
+    color: rgb(191 156 110 ); 
+    text-decoration: none;
+    padding: 23px;
+    transition: 0.3s;
+}
+
+
+/* ___________________________ */
+
+
+
+
+header nav ul li:hover a {
+    color: var(--main-color);
+}
+
+header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: rgb(0 0 0 /50%);
+    height: 124px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+header .container .logo img {
+    height: 170px;
+    padding-bottom: 8px;
+}
+
+
+/* disappear the toggle menu */
+@media (min-width: 991px) {
+
+    header nav .toggle-menu {
+        display: none;
+        align-items: center;
+    }
+}
+
+
+/*_____________ nav bar_________ */
+header nav {
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+
+    display: block;
+    padding: 50px 25px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li .product-special {
+    display: block;
+    padding: 50px 25px;
+    color: white;
+}
+
+header nav ul li:hover .product-special {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+header nav ul li:hover a:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+header nav .toggle-menu {
+    color: aliceblue;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+header nav ul .product .menu {
+    display: none;
+    position: ABSOLUTE;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 71%;
+    left: 69%;
+    TEXT-ALIGN: CENTER;
+    background-color: rgb(0 0 0 / 60%);
+    width: max-content;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+
+header .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header .menu a {
+    display: block;
+    color: white !important;
+    text-decoration: none;
+    padding: 23px;
+    transition: 0.3s;
+}
+
+header .menu a:hover {
+    transform: translateX(15px);
+    color: var(--main-color) !important;
+}
+header nav ul li {
+    transition: 0.3s;
+}
+
+@media (max-width: 991px) {
+    header .container .logo img {
+        height: 170px;
+        padding-bottom: 8px;
+        margin-left: -31px;
+    }
+
+    header nav .mobile-menu {
+        position: ABSOLUTE;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 71%;
+        right: -2%;
+        align-items: center;
+        TEXT-ALIGN: CENTER;
+        background-color: rgb(0 0 0 / 60%);
+        width: 30%;
+        display: none;
+        height: fit-content;
+        border-bottom-left-radius: 55px;
+        border-bottom-right-radius: 55px;
+    }
+    header nav ul li a {
+        display: block;
+        padding: 29px 25px;
+        color: white;
+        text-decoration: none;
+    }
+    header nav ul li .product-special {
+        display: block;
+        padding: 16px 22px;
+        color: white;
+    }
+    header nav ul .product .menu {
+        display: none;
+        position: ABSOLUTE;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 51% !important;
+        left: -130px !important;
+        TEXT-ALIGN: CENTER;
+        background-color: rgb(0 0 0 / 60%);
+        width: 130px;
+        border-radius: 35px;
+    }
+
+    header .menu a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 23px;
+        /* transition: 0.3s; */
+    }
+
+    header nav ul li:hover .product-special {
+        color: var(--main-color);
+        cursor: pointer;
+    }
+
+    header nav ul li:hover a:hover {
+        /* color: var(--main-color); */
+        cursor: pointer;
+    }
+
+}
+
+/* ______________________end header_______________________________ */
+
+/* ________________________start landing ________________________*/
+.landing{
+    min-height: 100vh;
+    background-color: rgb(0 0 0 );
+    overflow: hidden;
+    background-image: url(../images/nasa-1lfI7wkGWZ4-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+}
+.landing .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 /30%);
+}
+.landing .overlay .text{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 50%;
+    transform: translateY(-50%);
+    color: white;
+    background-color: rgb(191 156 110 /60%);
+    padding: 90px;
+    display: flex;
+    justify-content: flex-end;
+    animation: animate 2s ease-in-out forwards; 
+    overflow: hidden;
+}
+.landing .overlay .text .content {
+    
+    position: absolute;
+    width: 90%;
+    top: 25%;
+    left: 30%;
+    
+    display: none;
+}
+
+@keyframes animate {
+    0% 
+    {
+        width: 0;
+        height: 20px;
+    }
+    100%
+    {
+    width: 60%;
+    height: 150px;
+    }
+}
+
+
+.landing .overlay .text h1{
+    text-transform:uppercase;
+    font-size: 45px;
+    padding: 10px;
+}
+
+
+
+
+@media (max-width: 767px){
+    .landing .overlay .text {
+        width: 100%;
+        top:55%;
+        padding: 25px;
+    }
+    @keyframes animate {
+        0% 
+        {
+            width: 0;
+            height: 20px;
+        }
+        100%
+        {
+        width: 100%;
+        height: 150px;
+        }
+    }
+    .landing .overlay .text .content {
+        position: absolute;
+        width: 90%;
+        top: 26%;
+        left: 9%;
+        display: none;
+    }
+  
+   
+    
+
+}
+
+ /* end landing */
+
+ /* ________________________start 4 items ____________________ */
+
+.services {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.service-item {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 36px;
+    color: rgb(191 156 110 );
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-item p ,
+.service-item  .class {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-features {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.service-features li {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.service-features li::before {
+    content: "•";
+    margin-right: 10px;
+    color: rgb(191 156 110 );
+}
+
+.service-features li:last-child {
+    margin-bottom: 0;
+}
+.fa-check:before {
+    content: "\f00c";
+    color: var(--main-color);
+}
+.fa-network-wired:before {
+    content: "\f6ff";
+    color: var(--main-color);
+}
+.fa-cloud:before {
+    content: "\f0c2";
+    color: var(--main-color);
+}
+/* CSS code to style service titles and list items with the main color */
+
+.service-item h4
+ {
+    color: var(--main-color); /* Use the main color for service titles and paragraphs */
+    font-size: 16px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: 991px) {
+    .service-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+        flex-direction: column;
+        align-content: center;
+    }
+    .service-item {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(100% - 20px);
+        margin-bottom: 40px;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+}
+/* Start Contact */
+.special-heading {
+    color: black;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+
+.special-heading+p {
+    margin: -14px 0 0;
+    font-size: 19px;
+    text-align: center;
+    color: #797979;
+}
+
+@media (max-width: 767px) {
+    .special-heading {
+        font-size: 60px;
+    }
+    .special-heading+p {
+        margin-top: -8px;
+    }
+}
+
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: white;
+}
+
+.contact .info {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+}
+
+.contact .info .label {
+    font-size: 35px;
+    font-weight: 800;
+    color: rgb(191 156 110);
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+
+.contact .info .link {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+}
+
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.contact .info .social i {
+    margin-left: 10px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 767px) {
+    .contact .info .label,
+    .contact .info .link {
+        font-size: 25px;
+    }
+}
+
+/* End Contact */
+/* Start Footer */
+.footer {
+    background-color: rgb(191 156 110);
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer span {
+    font-weight: bold;
+    color: black;
+}
+.service-item li::before {
+    content: "•";
+    margin-right: 10px;
+    color: rgb(191 156 110);
+}
+.service-item .linkk a
+{
+    color: black;
+   
+}
